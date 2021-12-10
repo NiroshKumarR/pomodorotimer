@@ -9,11 +9,12 @@ export default function App() {
   const [title, setTitle] = useState("Start your 25 minute Goal now");
 
   const [timeleft, settimeLeft] = useState(25 * 60);
-
+  // const audio = new Audio("/stayingalive.mp3");
   const [isRunning, setIsrunning] = useState(false);
   const interval = useRef(null);
 
   const startTime = () => {
+    // console.log(audio.play());
     if (interval.current !== null) return;
     setTitle("Go Get'em🔥👀⏳");
 
@@ -27,6 +28,7 @@ export default function App() {
     }, 1000);
   };
   const stopTimer = () => {
+    // console.log(audio.pause());
     if (interval.current === null) return;
     clearInterval(interval.current);
     if (minutes > 20) {
