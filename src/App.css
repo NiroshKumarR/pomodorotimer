@@ -12,10 +12,10 @@
 .title {
   font-size: 50px;
   font-weight: bold;
-  color: burlywood;
-  background: -webkit-linear-gradient(rgb(200, 250, 64), white);
+  color: white;
+  /* background: -webkit-linear-gradient(rgb(200, 250, 64), white);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
   text-transform: uppercase;
 }
 
